@@ -1,0 +1,3 @@
+cache hit rate: 0.547945205479452
+p50 response time: [0.00616968]
+p99 response time: [0.00794308]
