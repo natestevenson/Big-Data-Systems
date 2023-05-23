@@ -1,0 +1,4 @@
+# project-5-nateproject5
+project-5-nateproject5 created by GitHub Classroom
+
+The startall.sh script is the required way to run the docker startup code for this project. It updates the server_container_id.txt file which is used in p5.ipynb to establish a connection between server.py and cassandra. Without it part 2's simulate_sensor() function will not work. It also prints the port number and container id server.py is using to the terminal so you know which container NOT to kill for part 4 of the project. The killall.sh script is optional and there for convenience.
