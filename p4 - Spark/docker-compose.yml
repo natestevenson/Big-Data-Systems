@@ -1,0 +1,16 @@
+services:
+    main:
+        image: p4-image
+        ports:
+        - "127.0.0.1:5000:5000"
+        - "127.0.0.1:4040:4040"
+        volumes:
+        - "./nb:/notebooks"
+        - "./main.sh:/start.sh"
+
+    worker:
+        image: p4-image
+        deploy:
+            replicas: 2
+        volumes:
+        - "./worker.sh:/start.sh"
