@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+message Report {
+	string date = 1; //format "YYYY-MM-DD"
+	string station = 2;
+	double degrees = 3;
+	bool raining = 4;
+}
+
